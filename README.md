@@ -12,6 +12,7 @@ torch.compile(net, backend='nvprims_nvfuser')
 ```
 I am using `nvprims_nvfuser` backend here to get FX Graph with higher level semantics. You can use TorchInductor (default backend) and you'll get a graph with lower level ops. For example, Softmax would be broken down into primitive ops.
 Though I don't anticipate any issues, this code has not been tested with TorchInductor.
+
 3. Install pydot package
 ```
 pip install pydot
