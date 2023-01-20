@@ -82,4 +82,4 @@ edge_shapes = [nx_g.edges[x]['shape'] for x in nx.edge_bfs(nx_g, source=source_n
 
 2. Graph drawing of the extracted graph
 Example below
-![Example Graph][examples/fx_graph_extracted_id_count(1).png]
+![Example Graph](examples/fx_graph_extracted_id_count(1).png)
